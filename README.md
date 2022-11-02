@@ -13,7 +13,8 @@ Polyflix is under MIT license for the moment, [more information is available her
 
 ## I want to contribute to this project
 
-All contribution to Polyflix are welcomed and will be treated with respect and care, if you want to know how to contribute, please read the [contributing documentation](./CONTRIBUTING.md)
+All contribution to Polyflix are welcomed and will be treated with respect and care, if you want to know how to contribute, please read the [contributing documentation](./CONTRIBUTING.md).
+We also recommends to read our [code of conduct](./CODE_OF_CONDUCT.md) before contributing.
 
 ## I found a security issue
 
