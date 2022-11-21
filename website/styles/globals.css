@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(./font.css);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Public sans", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-padding: 100px;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: hsl(0, 0%, 95%);
+  background: linear-gradient(
+    70deg,
+    hsl(0, 0%, 95%) 70%,
+    hsl(357, 92%, 92%) 100%
+  );
+  animation: body-background 5s infinite;
+  z-index: -2;
+  background-size: 150% 150%;
+}
+
+@keyframes body-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50vh;
+  z-index: -1;
+
+  background: hsl(357, 92%, 92%);
+  background: linear-gradient(
+    30deg,
+    hsl(357, 92%, 92%) 20%,
+    hsla(0, 0%, 95%, 0) 50%
+  );
+}
