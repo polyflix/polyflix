@@ -18,6 +18,7 @@ To understand well how we are using labels, refer to this definition for each la
 - `state: ...` The state of the issue (according with the action)
 - `type: ...` The type of Pull Request expected to be performed on the issue
 - `priority: ...` The priority of treatement of the issue
+- `semver: ...` Specific to Pull Request, the kind of version to be released
 - We also use some common labels like `breaking changes`, `help wanted` and `good first issue`.
 
 _Using our templates for issues and bug report, labels should be automatically provided._
@@ -30,7 +31,7 @@ When you are creating a pull request, consider using templates provided and fill
 
 **Your pull request have to be rebased before asking for merge**
 
-When your Pull Request is ready to be reviewed, you can ask for "triage" by adding the label :
+When your Pull Request is ready to be reviewed, you can ask for "review" by adding the label :
 `action: review`
 
 This label inform that the Pull Request is ready to be reviewed according to the contributor, the Pull Request will be checked in a first step by a maintainer using the following criterias:
@@ -43,6 +44,8 @@ This label inform that the Pull Request is ready to be reviewed according to the
 If the maintainer validates the relevance and form of the Pull Request, he will switch the label to `action: merge`.
 
 A Pull Request with `action: merge` need to be reviewed by a maintainer and merged if all OK.
+
+NOTE: A pull request need 2 approvals to be merged.
 
 ## Commits conventions
 
