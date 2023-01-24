@@ -147,6 +147,12 @@ Please consider signing the commit message at least with `Signed-Off-By`.
 
 ## Setup your developer environment
 
+In order to setup your developer environment, we provide a custom tool to start the entire stack of the application. This tool is called `devkit` and is available in the [polyflix/devkit](https://github.com/polyflix/devkit) repository.
+
+Frontend is the only part of the application that is not available in the `devkit` tool. You will have to start it manually.
+
+If you want to contribute to the frontend, you can run it alone using the mocked api. More information about the frontend is available in the [polyflix/frontend](https://github.com/polyflix/frontend#development) repository.
+
 ## Contact
 
 If you have any questions, feel free to contact us on [Discord](https://discord.gg/AMDF6sQnTN).
